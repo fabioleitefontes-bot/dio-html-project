@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+.header-image-circle {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px; /* Tamanho da imagem */
+    border-radius: 50%; /* Torna a imagem circular */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorção */
+    border: 2px solid rgb(5, 5, 5); /* Borda branca para destacar */
+    display: block; 
+    margin-left: 20px; 
+    flex-shrink: 0; 
+}
+ul {
+    list-style-type: none;
+
+    padding: 5px;
+    margin: 5px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ a:hover {
+    text-decoration: underline;
+ }
+ .menu ul li:not(:has(a)) {
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: rgb(117, 209, 240); /* Ou a cor que você quiser para destacar */
+}
+.header.with-image {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+    min-height: 150px; 
+    box-sizing: border-box; 
+}
+
+.header.with-image h1 {
+    margin: 0; 
+    text-align: left; 
+     
+}
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: aqua;
+    padding: 10px 20px 0px;
+}
+.header {
+    background-color: rgb(5, 108, 108);
+    min-height: 150px;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    padding: 20px;
+}
+.footer {
+    background-color: rgb(99, 56, 240);
+    min-height: 150px;
+    color: #f6f6f6;
+}
