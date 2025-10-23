@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul { 
+    list-style: none; 
+    padding-left: 5px; 
+}
+
+a { 
+    color:blue; 
+    text-decoration: none;
+}
+
+
+header {
+    display: flex;
+    align-items: center; 
+    gap: 80px;         
+    padding: 10px 20px; 
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    width: 200px;
+    display: block;
+}
+
+h1 {
+    margin: 0; /* Remove margens padrão para alinhar melhor */
+    /* Removidas as propriedades justify-content e align-content (não se aplicam a <h1>) */
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-left: 0; /* Removido o margin-left de 15px que estava no h1,h2 */
+}
+
+/* Estilos para h2 (para aplicar o margin-left de 15px somente aos h2) */
+h2 {
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-left: 15px;
+    align-content: center;
+}
+
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer {
+   background-color: #ededed;
+    border-top: 1px solid #ccc;
+    padding: 20px 40px;
+    margin-top: 40px;
+    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer small {
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 0.85em;
+    line-height: 1.5;
+}
+
+.footer small a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.footer small a:hover {
+    text-decoration: underline;
+}
+.footer small p {
+    font-size: 0.9em; /* 90% do tamanho da fonte do elemento <small> pai */
+    margin: 3px 0; }
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+
+figure {
+    text-align: center;
+}
+
+
+p {
+    text-align: justify; /* Mantido o alinhamento justificado */
+    line-height: 1.6;
+    margin-top: 1px;
+    margin-bottom: 1rem;
+    font-size: 12px;
+
+    }
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    font-size: 12px;
+    color: #555;
+    margin-top: 8px;
+}
